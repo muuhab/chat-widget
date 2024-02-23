@@ -1,13 +1,12 @@
-import { FC } from 'react'
+import NavigationSidebar from '@/components/navigation/navigation-sidebar'
+import { Button } from '@/components/ui/button'
 import {
     Sheet,
     SheetContent,
     SheetTrigger
 } from '@/components/ui/sheet'
-import { Button } from '@/components/ui/button'
-import NavigationSidebar from '@/components/navigation/navigation-sidebar'
-import ServerSidebar from '@/components/server/server-sidebar'
 import { Menu } from 'lucide-react'
+import { FC } from 'react'
 
 interface MobileToggleProps {
     serverId: string;
