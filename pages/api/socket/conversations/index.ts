@@ -31,7 +31,6 @@ export default async function handler(
         memberTwo:true,
       }
     });
-    console.log('conversations',conversations)
     const conv = conversations.map((c) => {
       if (c.memberOneId === profile.id) {
         return {

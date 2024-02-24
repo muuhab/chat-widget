@@ -34,7 +34,6 @@ const createNewConversation = async (
   memberTwoId: string
 ) => {
   try {
-    console.log("Creating new conversation",memberOneId,memberTwoId);
     return await db.conversation.create({
       data: {
         memberOneId,
