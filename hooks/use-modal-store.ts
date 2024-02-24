@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 export type ModalType =
-  "messageFile" | "deleteMessage";
+  "messageFile" | "deleteMessage" | "chatWidget";
 
 interface ModalData {
   apiUrl?: string;

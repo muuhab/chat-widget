@@ -11,11 +11,14 @@ export const initialProfile = async () => {
   });
 
   if (profile) return profile;
+  
+const randFirstName = Math.random().toString(36).substring(7);
+const randLastName = Math.random().toString(36).substring(7);
 
   const newProfile = await db.profile.create({
     data: {
       userId: user.id,
-      name: `${user.firstName} ${user.lastName}`,
+      name: `${user.firstName || randFirstName} ${user.lastName || randLastName}`,
       imageUrl: user.imageUrl,
       email: user.emailAddresses[0].emailAddress,
     },

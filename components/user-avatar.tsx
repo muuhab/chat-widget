@@ -16,9 +16,9 @@ const UserAvatar: FC<UserAvatarProps> = ({ className, src }) => {
         )}>
             <AvatarImage src={src} />
         </Avatar>
-        <span
+        {/* <span
             className="absolute block rounded-full bg-green-500 ring-2 ring-white top-0 right-0 h-1 w-1 md:h-1 md:w-1"
-        />
+        /> */}
     </div>
 }
 
