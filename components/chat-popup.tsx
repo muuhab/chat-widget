@@ -12,7 +12,7 @@ const ChatPopup: FC<ChatPopupProps> = () => {
 
     const { onOpen } = useModal()
 
-    return <div className="fixed z-10 bottom-4 right-4 cursor-pointer">
+    return <div className="fixed z-10 bottom-[12%] right-4 cursor-pointer">
         <MessageCircle className="w-[45px] h-[45px]" onClick={() => onOpen("chatWidget",
         )} />
     </div>;
